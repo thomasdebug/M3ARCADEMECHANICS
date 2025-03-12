@@ -22,6 +22,7 @@ public class NewBehaviourScript : MonoBehaviour
             //SetTrigger is trigger activeren
             ani.ResetTrigger("Idle");
             ani.ResetTrigger("RunR");
+            ani.ResetTrigger("Jump");
             //ResetTrigger is Trigger de-activeren
         }
         else if (Input.GetAxis("Vertical") < 0)
@@ -31,6 +32,14 @@ public class NewBehaviourScript : MonoBehaviour
             ani.SetTrigger("RunR");
             ani.ResetTrigger("Idle");
             ani.ResetTrigger("Run");
+            ani.ResetTrigger("Jump");
+        }
+        else if (Input.GetAxis("Horizontal") > 1)
+        {
+            ani.SetTrigger("Jump");
+            ani.ResetTrigger("Idle");
+            ani.ResetTrigger("Run");
+            ani.ResetTrigger("RunR");
         }
         else
         {
@@ -39,6 +48,8 @@ public class NewBehaviourScript : MonoBehaviour
             ani.SetTrigger("Idle");
             ani.ResetTrigger("Run");
             ani.ResetTrigger("RunR");
+            ani.ResetTrigger("Jump");
         }
+        
     }
 }
