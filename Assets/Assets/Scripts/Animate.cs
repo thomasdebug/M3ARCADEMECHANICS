@@ -34,7 +34,7 @@ public class NewBehaviourScript : MonoBehaviour
             ani.ResetTrigger("Run");
             ani.ResetTrigger("Jump");
         }
-        else if (Input.GetAxis("Horizontal") > 1)
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             ani.SetTrigger("Jump");
             ani.ResetTrigger("Idle");

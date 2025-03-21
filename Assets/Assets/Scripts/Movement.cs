@@ -46,9 +46,25 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            Debug.Log("jump");
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
+    }
+    /*
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        Debug.Log("hit");
+        if (collision.gameObject.tag == "floor") {
+
+            Debug.Log("hit floor");
+            isGrounded |= true;
+        }
+    }*/
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("!!");
     }
 
 
