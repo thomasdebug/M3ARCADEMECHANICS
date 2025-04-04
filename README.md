@@ -8,3 +8,7 @@
 ![Mechanic2](Mechanic2.gif)
 [Script Movement](Assets/Assets/Scripts/Movement.cs)
 jump mechanic
+# derde mechanic
+![Mechanic3](Mechanic%203.gif)
+[Movement](Assets/Assets/Scripts/Movement.cs)
+Double jump
