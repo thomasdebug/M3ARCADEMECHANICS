@@ -12,3 +12,7 @@ jump mechanic
 ![Mechanic3](Mechanic%203.gif)
 [Movement](Assets/Assets/Scripts/Movement.cs)
 Double jump
+# vierde mechanic
+![Mechanic4](Mechanic%204.gif)
+[Jumppad](Assets/Assets/Scripts/Jump%20Pad.cs)
+Jumppad
